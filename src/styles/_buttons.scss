@@ -1,0 +1,23 @@
+.btn {
+  padding: $pd_default;
+
+  &_reset {
+    background-color: $bgc_warn;
+  }
+
+  &_submit {
+    background-color: $bgc_success;
+  }
+}
+
+.btnGroup {
+  display: flex;
+
+  > .btn {
+    margin: 0 $mg_default;
+  }
+
+  &_center {
+    justify-content: center;
+  }
+}

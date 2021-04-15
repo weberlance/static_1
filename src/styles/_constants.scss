@@ -1,0 +1,23 @@
+// TODO
+// common colors
+
+// main background colors
+$bgc_1: #fff;
+$bgc_2: #ccc;
+
+// main text colors
+$color_1: invert(rgba($bgc_1, 1));
+
+// utils background colors
+$bgc_warn: #fa0;
+$bgc_error: #f00;
+$bgc_success: #0f0;
+
+// utils text colors
+$color_warn: #000;
+$color_error: #000;
+$color_success: #000;
+
+// geometry
+$pd_default: 5px;
+$mg_default: 5px;

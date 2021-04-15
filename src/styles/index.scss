@@ -1,6 +1,20 @@
-$body-color: slateblue;
+@import 'constants';
+@import 'buttons';
+
+// pages
+@import './forms/login';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
 
 body {
-  color: $body-color;
+  background-color: $bgc_1;
+  color: $color_1;
   font-family: sans-serif;
 }

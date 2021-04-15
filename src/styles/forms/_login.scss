@@ -1,0 +1,17 @@
+.loginFormWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.loginForm {
+  background-color: $bgc_1;
+  padding: $pd_default * 2;
+
+  &__input {
+    width: 100%;
+    margin-bottom: $mg_default * 3;
+  }
+}
