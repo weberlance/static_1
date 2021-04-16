@@ -7,11 +7,52 @@
 }
 
 .loginForm {
+  position: relative;
   background-color: $bgc_1;
   padding: $pd_default * 2;
 
   &__input {
     width: 100%;
     margin-bottom: $mg_default * 3;
+  }
+
+  &.processed {
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      left: calc(50% - 0.5em);
+      top: calc(50% - 0.5em);
+      width: 1em;
+      height: 1em;
+      border-top: 2px solid $color_1;
+      border-radius: 50%;
+      animation: loaderRotate 2s ease-in-out infinite;
+    }
+  }
+
+  &.failed {
+    input {
+      border: 1px solid $bgc_error;
+    }
+  }
+}
+
+@keyframes loaderRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }

@@ -7,7 +7,7 @@ const htmlPageNames = ['login'];
 const multipleHtmlPlugins = htmlPageNames.map((name) => {
   return new HtmlWebpackPlugin({
     // template: `./src/${name}.html`,
-    template: Path.resolve(__dirname, `../src/pages/${name}.html` ),
+    template: Path.resolve(__dirname, `../src/pages/${name}.html`),
     filename: `${name}.html`,
     // chunks: [`${name}`] // respective JS files
   });
